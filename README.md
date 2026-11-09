@@ -9,6 +9,7 @@ Zehnder Metropolitan Elektrisch (MET). Goal: a local Home Assistant bridge
 ## Status
 
 - [x] Manual analyzed (`RAD RF Bedienung` verkorte handleiding, V01-2023 / 972000321)
+- [x] RF capture methodology validated on a practice target (869 MHz LED remote, see docs/led-remote-findings.md)
 - [ ] RF captures taken
 - [ ] Frame structure decoded
 - [ ] Pairing handshake documented
@@ -32,7 +33,9 @@ Zehnder Metropolitan Elektrisch (MET). Goal: a local Home Assistant bridge
 - `captures/` - raw I/Q or hex dumps per button press
 - `docs/protocol.md` - decoded frame layout
 - `docs/pairing.md` - pairing handshake
+- `docs/led-remote-findings.md` - practice-target (869 MHz LED remote) RF findings and capture methodology
 - `firmware/` - ESP32 + CC1101/nRF905 sniffer/transmitter and ESPHome bridge
+- `tools/` - capture analysis helpers (`analyze_iq.py`)
 
 ## Hardware used
 
